@@ -12,22 +12,27 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
+import com.ldy.JavaScraping.HandlingErrors.LinkNotFoundException;
+
 public class WikiScraper {
 	private static Random generator;
 	public static void main(String[] args) {
 		//Creates a new random number generator using a single seed
 		generator =	 new Random(31415926);
 		//call scrapeTopic method to catch uri "/wiki/java"
-		scrapeTopic("/wiki/Java");
+		try {
+			scrapeTopic("/wiki/Java");
+		} catch (LinkNotFoundException e) {
+			System.out.println("Try again!");;
+		}
 	}
 		//create scrapeTopic method to parse html object:
-	public static void scrapeTopic(String url) {
+	public static void scrapeTopic(String url) throws LinkNotFoundException {
 		String html = getUrl("https://en.wikipedia.org"+url);
 		Document doc = Jsoup.parse(html);
 		Elements links = doc.select("#mw-content-text [href~=^/wiki/((?!:).)*$]");
 		if(links.size()==0){
-			System.out.println("No links found at "+ url +". Going back to Java!");
-			scrapeTopic("/wiki/Java");
+			throw new LinkNotFoundException("No links on page, or page was malformed");
 		}
 		int r = generator.nextInt(links.size());
 		System.out.println("Random link is:"
