@@ -21,8 +21,7 @@ public class Wikipedia {
 	public static void main(String[] args) throws IOException {
 		for (int i=0;i<10;i++){
 			String randomPage = getRandomHist("de");
-			System.out.println("This page has been edited in "
-			 +getEditCountry(randomPage));
+			System.out.println("This page has been edited in " +getEditCountry(randomPage));
 		}
 		for (int j=0;j<10;j++){
 			String randomPage = getRandomHist("en");
