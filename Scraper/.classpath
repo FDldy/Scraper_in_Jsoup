@@ -5,5 +5,26 @@
 	<classpathentry kind="lib" path="F:/DevelopTools/Spider/jsoup-1.8.3.jar" sourcepath="F:/DevelopTools/Spider/jsoup-1.8.3-sources.jar"/>
 	<classpathentry kind="lib" path="F:/DevelopTools/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/htmlunit-2.21.jar" sourcepath="F:/DevelopTools/htmlunit-2.21-src.zip"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/htmlunit-core-js-2.17.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/neko-htmlunit-2.21.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/cssparser-0.9.18.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/jetty-io-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/jetty-util-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/serializer-2.7.2.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/websocket-api-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/websocket-client-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/websocket-common-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/xalan-2.7.2.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="F:/DevelopTools/htmlunit-2.21-bin/htmlunit-2.21/lib/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
