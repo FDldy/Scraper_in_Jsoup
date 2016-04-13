@@ -35,7 +35,7 @@ public class WikiLogin extends TestCase{
 		HtmlPasswordInput passField = form.getInputByName("wpPassword");
 		
 		userField.setValueAttribute("Fdliudaiyuan");
-		passField.setValueAttribute("3331196");
+		passField.setValueAttribute("******");
 		
 		HtmlPage page2 = button.click();
 		
