@@ -7,26 +7,17 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.Properties;
-import java.util.Random;
-
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.select.Elements;
-
 import java.sql.*;
 
 import com.ldy.JavaScraping.HandlingErrors.LinkNotFoundException;
 
 	
 	class WikiCrawler extends Thread{
-		private static Random generator;
 		private static Connection dbCon;
 		
 		public WikiCrawler(String str){
 			super(str);
-		
-			//Creates a new random number generator using a single seed
-			generator =	 new Random(31415926);
+			
 			
 			String dbUrl = "jdbc:mysql://localhost:3306/mydb";
 			Properties connectionProps = new Properties();
@@ -68,17 +59,17 @@ import com.ldy.JavaScraping.HandlingErrors.LinkNotFoundException;
 	}	
 	
 	
-	private static void writeToDB(String title,String url){
-		PreparedStatement useStmt;
-		try {
-			useStmt = dbCon.prepareStatement("INSERT INTO wikipedia (title, url) VALUES (?,?)");
-			useStmt.setString(1, title);
-			useStmt.setString(2, url);
-			useStmt.executeUpdate();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
+//	private static void writeToDB(String title,String url){
+//		PreparedStatement useStmt;
+//		try {
+//			useStmt = dbCon.prepareStatement("INSERT INTO wikipedia (title, url) VALUES (?,?)");
+//			useStmt.setString(1, title);
+//			useStmt.setString(2, url);
+//			useStmt.executeUpdate();
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//		}
+//	}
 	
 		//create scrapeTopic method to parse html object:
 	public static String scrapeTopic(String url) throws LinkNotFoundException {
